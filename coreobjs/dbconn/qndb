@@ -1,0 +1,7 @@
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://root:password$@mongodb:' +  process.env.MONGODB_PORT + '/admin');
+
+//var QnDb = mongoose.createConnection('mongodb://qnadmin:srini123$$@mongodb:' +  process.env.MONGODB_PORT + '/QuestionDb',{auth:{authdb:'admin'}}); 
+
+module.exports = exports = mongoose;
